@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+      
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#E3E3E3" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="55px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="70dp" >
+
+        <EditText
+            android:id="@+id/tbProcurar"
+            android:layout_width="250px"
+            android:layout_height="50px"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="Código ou nome do produto" />
+
+        <Button
+            android:id="@+id/buPesquisar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tbProcurar"
+            android:text="Pesquisar" />
+
+        <Spinner
+            android:id="@+id/cbClientes"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            
+            android:layout_toRightOf="@+id/buPesquisar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1" >
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Preço"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/tbPreco"
+            android:layout_width="100px"
+            android:layout_height="50px"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView02"
+            android:ems="10"
+            android:inputType="numberDecimal" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tbPreco"
+            android:layout_marginLeft="47dp"
+            android:layout_toRightOf="@+id/tbPreco"
+            android:text="% Desc."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/tbDesconto"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/tbPreco"
+            android:layout_alignBottom="@+id/tbPreco"
+            android:layout_alignLeft="@+id/TextView04"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/tbQtd"
+            android:layout_width="90px"
+            android:layout_height="50px"
+            android:layout_alignBaseline="@+id/tbDesconto"
+            android:layout_alignBottom="@+id/tbDesconto"
+            android:layout_marginLeft="59dp"
+            android:layout_toRightOf="@+id/tbDesconto"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tbQtd"
+            android:layout_alignLeft="@+id/tbQtd"
+            android:text="Qtd"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvPrecoLiq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/buAdd"
+            android:layout_marginLeft="52dp"
+            android:layout_toRightOf="@+id/tbQtd"
+            android:text="0,00"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buAdd"
+            android:layout_alignRight="@+id/tvPrecoLiq"
+            android:text="Preço Liq."            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/buGerar"
+            android:layout_alignLeft="@+id/lbSaldoVerba"
+            android:text="0.00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/buAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tbQtd"
+            android:layout_marginLeft="103dp"
+            android:layout_toRightOf="@+id/tvPrecoLiq"
+            android:text="Adicionar" />
+
+        <TextView
+            android:id="@+id/txSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="31dp"
+            android:layout_toRightOf="@+id/TextView06"
+            android:text="Saldo"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txValorSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/buAdd"
+            android:layout_alignRight="@+id/txSaldo"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/buGerar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/buAdd"
+            android:layout_alignBottom="@+id/buAdd"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/buAdd"
+            android:text="Gravar Pedido" />
+
+        <TextView
+            android:id="@+id/lbSaldoVerba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buGerar"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="28dp"
+            android:text="Total :"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buGerar"
+            android:layout_alignLeft="@+id/lbDescTotal"
+            android:text="Desc."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/lbDescTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txTotal"
+            android:layout_alignBottom="@+id/txTotal"
+            android:layout_marginRight="43dp"
+            android:layout_toLeftOf="@+id/txTotal"
+            android:text="0.00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="31dp" >
+
+        <ListView
+            android:id="@+id/lsItens"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical" >
+        </ListView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tbArquivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="180dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tbCondicao"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/tbArquivo"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tbCliente"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="48dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tbPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/tbCondicao"
+        android:text="N.Pedido" />
+
+    <Spinner
+        android:id="@+id/cbUnidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/relativeLayout1"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/relativeLayout1"
+        android:entries="@array/country_arrays"
+        android:prompt="@string/country_prompt"/>
+        
+
+    <TextView
+        android:id="@+id/lbcondicao222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cbUnidade"
+        android:layout_alignLeft="@+id/cbUnidade"
+        android:text="Unidade Venda"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/Sim_Nao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lbcondicao"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/cbPrazo"
+        android:layout_width="500px"
+        android:layout_height="55px"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_below="@+id/tbArquivo" />
+
+    <TextView
+        android:id="@+id/lbValorTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cbUnidade"
+        android:layout_toLeftOf="@+id/cbPrazo"
+        android:text="Prazo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/ckPesq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Sim_Nao"
+        android:layout_toRightOf="@+id/Sim_Nao"
+        android:checked="true"
+        android:text="Pesquisa Avançada" />
+
+</RelativeLayout>

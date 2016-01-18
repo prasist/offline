@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+      
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+     
+     <TextView android:id="@+id/pedido"
+       android:text="Pedido"
+       android:layout_height="40px"
+       android:layout_width="wrap_content"
+       android:width="80dip"
+       android:textAppearance="?android:attr/textAppearanceSmall" 
+       android:gravity="left"/>
+
+     <!-- 
+      <TextView android:id="@+id/data"
+          android:text="Data"
+          android:layout_height="40px"
+          android:layout_width="wrap_content"
+          android:gravity="left"
+          android:textAppearance="?android:attr/textAppearanceSmall" 
+          android:width="115dip"/>
+ -->
+ 
+        <TextView android:id="@+id/forma"
+          android:text="Forma Pagto."
+          android:layout_height="40px"
+          android:layout_width="wrap_content"
+          android:gravity="left"
+          android:textAppearance="?android:attr/textAppearanceSmall" 
+          android:width="220dip"/>
+      
+        <TextView android:id="@+id/prazo"
+          android:text="Prazo Pagto."
+          android:layout_height="40px"
+          android:layout_width="wrap_content"
+          android:gravity="left"
+          android:textAppearance="?android:attr/textAppearanceSmall" 
+          android:width="215dip"/>
+          
+      <TextView
+          android:id="@+id/cliente"
+          android:layout_width="wrap_content"
+          android:layout_height="40px"          
+          android:gravity="left"
+          android:text="Cliente"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:width="270dip" />
+          
+      <TextView android:id="@+id/valor"
+          android:text="Valor"
+          android:layout_height="40px"
+          android:layout_width="wrap_content"
+          android:gravity="right"
+          android:textAppearance="?android:attr/textAppearanceSmall" 
+          android:width="120dip"/>
+             
+      <TextView android:id="@+id/codtipprc"
+          android:text=""
+          android:layout_height="40px"
+          android:layout_width="wrap_content"
+          android:gravity="left"
+          android:textAppearance="?android:attr/textAppearanceSmall" 
+          android:width="1dip"/>
+      
+      <TextView android:id="@+id/codtipprz"
+          android:text=""
+          android:layout_height="40px"
+          android:layout_width="wrap_content"
+          android:gravity="left"
+          android:textAppearance="?android:attr/textAppearanceSmall" 
+          android:width="1dip"/>
+      
+      <TextView android:id="@+id/status"
+          android:text="Status"
+          android:layout_height="40px"
+          android:layout_width="wrap_content"
+          android:gravity="right"
+          android:textAppearance="?android:attr/textAppearanceSmall" 
+          android:width="90dip"/>
+      
+             
+</LinearLayout>

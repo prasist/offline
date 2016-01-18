@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+      
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+     <TextView
+         android:id="@+id/produto"
+         android:layout_width="wrap_content"
+         android:layout_height="40px"
+         android:gravity="left"
+         android:text="Produto"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:width="460dp" />
+    
+        <TextView
+            android:id="@+id/forma"
+            android:layout_width="wrap_content"
+            android:layout_height="40px"
+            android:gravity="left"
+            android:text="Forma Pagto."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:width="190dp" />
+      
+        <TextView
+            android:id="@+id/prazo"
+            android:layout_width="wrap_content"
+            android:layout_height="40px"
+            android:gravity="left"
+            android:text="Prazo Pagto."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:width="190dp" />
+          
+      <TextView android:id="@+id/valor"
+          android:text="Valor"
+          android:layout_height="40px"
+          android:layout_width="wrap_content"
+          android:gravity="right"
+          android:textAppearance="?android:attr/textAppearanceSmall" 
+          android:width="120dip"/>
+      
+      
+      <TextView android:id="@+id/saldo"
+          android:text="Saldo"
+          android:layout_height="40px"
+          android:layout_width="wrap_content"
+          android:gravity="right"
+          android:textAppearance="?android:attr/textAppearanceSmall" 
+          android:width="120dip"/>
+                
+             
+</LinearLayout>

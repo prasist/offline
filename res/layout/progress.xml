@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1250px"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#E3E3E3" >
+   
+     <TextView
+         android:id="@+id/tbRecebe"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="ID VENDEDOR"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         />
+     
+     <TextView
+            android:id="@+id/tbHost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"             
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/txArq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ao final da importação essa tela será fechada automaticamente."
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+</LinearLayout>

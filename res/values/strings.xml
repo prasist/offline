@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Prasist Offline</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="country_prompt">Seleção Unidades de Venda</string>
+    
+    <string-array name="country_arrays">
+        <item>Menor Unidade</item>
+        <item>Maior Unidade</item>        
+    </string-array>
+    
+
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E3E3E3" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <CheckBox
+            android:id="@+id/ckPesqAvanc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:checked="true" />
+
+        <Spinner
+            android:id="@+id/cbcliente"
+            android:layout_width="450dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/buPesquisarCliente"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/buPesquisarCliente" />
+
+        <Button
+            android:id="@+id/buPesquisarCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tbProcurarCliente"
+            android:layout_alignBottom="@+id/tbProcurarCliente"
+            android:layout_marginLeft="31dp"
+            android:layout_toRightOf="@+id/tbProcurarCliente"
+            android:text="Pesquisar" />
+
+        <Spinner
+            android:id="@+id/cbItens"
+            android:layout_width="450dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/buPesquisar3"
+            android:layout_alignLeft="@+id/cbcliente" />
+
+        <ListView
+            android:id="@+id/lsProdutos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cbTabelas"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/lbcondicao222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tbProcurarCliente"
+            android:layout_alignBottom="@+id/tbProcurarCliente"
+            android:layout_alignParentLeft="true"
+            android:text="Cliente" />
+
+        <Button
+            android:id="@+id/buPesquisar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buPesquisarCliente"
+            android:layout_alignTop="@+id/tbProcurarProd"
+            android:text="Pesquisar" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buPesquisarCliente"
+            android:layout_marginTop="13dp"
+            android:text="Produto" />
+
+        <TextView
+            android:id="@+id/lbValorTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cbTabelas"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/cbTabelas"
+            android:layout_marginTop="12dp"
+            android:maxLines="2"
+            android:text="Tab. Preço" />
+
+        <Spinner
+            android:id="@+id/cbTabelas"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cbItens"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/lbValorTotal" />
+
+        <EditText
+            android:id="@+id/tbProcurarCliente"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/ckPesqAvanc"
+            android:layout_marginLeft="45dp"
+            android:ems="10"
+            android:hint="CNPJ, Nome ou Código do Cliente" >
+            
+            <requestFocus />
+        </EditText>
+            
+        <EditText
+            android:id="@+id/tbProcurarProd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tbProcurarCliente"
+            android:layout_below="@+id/buPesquisarCliente"
+            android:ems="10"
+            android:hint="Código ou Nome Produto" >
+          
+        </EditText>
+
+        <Button
+            android:id="@+id/buListar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lsProdutos"
+            android:layout_alignLeft="@+id/cbItens"
+            android:text="Listar Preços" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ckPesqAvanc"
+            android:layout_alignBottom="@+id/ckPesqAvanc"
+            android:layout_toRightOf="@+id/TextView01"
+            android:text="Pesquisa Avançada" />
+
+        <EditText
+            android:id="@+id/tbOcultoPreco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cbItens"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/buPesquisar3"
+            android:ems="10"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/tbOcultoPrazo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText1"
+            android:layout_alignRight="@+id/editText1"
+            android:ems="10"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/tbOcultoForma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/editText2"
+            android:ems="10"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

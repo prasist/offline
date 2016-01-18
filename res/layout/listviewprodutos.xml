@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+     <TextView android:id="@+id/produto"
+       android:text="Produto"
+       android:layout_height="40px"
+       android:layout_width="wrap_content"
+       android:width="690dip"
+       android:textAppearance="?android:attr/textAppearanceSmall" 
+       android:gravity="left"/>
+
+      <TextView android:id="@+id/qtd"
+          android:text="Qtd"
+          android:layout_height="40px"
+          android:layout_width="wrap_content"
+          android:gravity="right"
+          android:textAppearance="?android:attr/textAppearanceSmall" 
+          android:width="70dip"/>
+
+
+      <TextView android:id="@+id/preco"
+          android:text="Preço Unit."
+          android:layout_height="40px"
+          android:layout_width="wrap_content"
+          android:gravity="right"
+          android:textAppearance="?android:attr/textAppearanceSmall" 
+          android:width="90dip"/>
+      
+      <TextView android:id="@+id/desc"
+          android:text="% Desc."
+          android:layout_height="40px"
+          android:layout_width="wrap_content"
+          android:gravity="right"
+          android:textAppearance="?android:attr/textAppearanceSmall" 
+          android:width="80dip"/>
+
+
+      <TextView android:id="@+id/total"
+          android:text="Total"
+          android:layout_height="40px"
+          android:layout_width="wrap_content"
+          android:width="145dip"
+          android:textAppearance="?android:attr/textAppearanceSmall" 
+          android:gravity="right"></TextView>
+               
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E3E3E3">
+
+    <Button
+        android:id="@+id/buAtualizar"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="102dp"
+        android:layout_marginTop="102dp"
+        android:drawableTop="@drawable/update"
+        android:text="Atualizar Dados" />
+
+    <Button
+        android:id="@+id/buPreview"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_alignBaseline="@+id/buAtualizar"
+        android:layout_alignBottom="@+id/buAtualizar"
+        android:layout_marginLeft="34dp"
+        android:drawableTop="@drawable/pesquisar"
+        android:layout_toRightOf="@+id/buAtualizar"
+        android:text="Consultar Pedidos" />
+
+    <Button
+        android:id="@+id/buEnviar"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_alignBaseline="@+id/buPreview"
+        android:layout_alignBottom="@+id/buPreview"
+        android:layout_marginLeft="39dp"
+        android:drawableTop="@drawable/upload"
+        android:layout_toRightOf="@+id/buPreview"
+        android:text="Enviar Pedidos" />
+
+    <Button
+        android:id="@+id/buConfig"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/buPreview"
+        android:drawableTop="@drawable/config"
+        android:text="Configurações" />
+
+    <TextView
+        android:id="@+id/lbVendedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buAtualizar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="29dp"
+        android:text="Vendedor"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbcondicao222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ckConexao"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:text="PRASIST Informática - prasist@prasist.com.br -  +55 (41) 3343-7476" />
+
+    <TextView
+        android:id="@+id/tvEmpresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbVendedor"
+        android:layout_below="@+id/lbVendedor"
+        android:text="Empresa : 1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buEnviar"
+        android:layout_below="@+id/buEnviar"
+        android:text="Log Importação :" />
+
+    <TextView
+        android:id="@+id/lbVersao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ckConexao"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/buEnviar"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/buSair"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/buPreview"
+        android:layout_alignTop="@+id/buConfig"
+        android:drawableTop="@drawable/sair"
+        android:text="Sair" />
+
+    <CheckBox
+        android:id="@+id/ckConexao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lbcondicao222"
+        android:layout_alignLeft="@+id/buConfig"
+        android:text="Usar Conexão/IP rede local" />
+    
+</RelativeLayout>

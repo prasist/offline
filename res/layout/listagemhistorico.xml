@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/numdoc"
+        android:layout_width="111dp"
+        android:layout_height="40px"
+        android:gravity="left"
+        android:text="N. Doc."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:width="200dp" />
+
+    <TextView
+        android:id="@+id/parcela"
+        android:layout_width="111dp"
+        android:layout_height="40px"
+        android:gravity="left"
+        android:text="Parcela"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:width="200dp" />
+
+    <TextView
+        android:id="@+id/serie"
+        android:layout_width="111dp"
+        android:layout_height="40px"
+        android:gravity="left"
+        android:text="Série"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:width="200dp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="111dp"
+        android:layout_height="40px"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:text="Status"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:width="200dp" />
+
+    <TextView
+        android:id="@+id/valor"
+        android:layout_width="111dp"
+        android:layout_height="40px"        
+        android:gravity="left"
+        android:layout_gravity="left"
+        android:text="Valor"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:width="200dp" />
+
+    <TextView
+        android:id="@+id/vencimento"
+        android:layout_width="111dp"
+        android:layout_height="40px"
+        android:gravity="left"
+        android:text="Vencimento"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:width="210dp" />
+
+    <TextView
+        android:id="@+id/emissao"
+        android:layout_width="111dp"
+        android:layout_height="40px"
+        android:gravity="left"
+        android:text="Emissão"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:width="210dp" />
+
+    <TextView
+        android:id="@+id/atraso"
+        android:layout_width="111dp"
+        android:layout_height="40px"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:text="Dias Atraso"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:width="150dp" />
+
+    <TextView
+        android:id="@+id/saldo"
+        android:layout_width="111dp"
+        android:layout_height="40px"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:text="Saldo"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:width="200dp" />
+
+</LinearLayout>
