@@ -1,4 +1,5 @@
 /*Ultima atualização 4.0.3 - Listar saldo na consulta de tabela de preços*/
+/*Atualização teste pelo github*/
 package com.novoprasistoffline;
 
 import android.app.Activity;
